@@ -1,21 +1,80 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { View, Text, Button,Image } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import {ImageBackground} from "react-native-web";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+function Menu({navigation}) {
+    return (
+        <View >
+            <Text>GameLearn</Text>
+            <Text>Dryden Inc Games</Text>
+            <Text>Menu:</Text>
+            <Button
+                color="black"
+                title =  'Martian Escape'
+
+                onPress={() => navigation.navigate('MartianEscape')}
+            />
+
+        </View>
+    );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+function MartianEscape({navigation}) {
+    return (
+        <View>
+
+            <Button
+                color="black"
+                title = 'Menu'
+
+                onPress={() => navigation.navigate('Menu')}
+            />
+
+
+            <ImageBackground
+
+               style={{ justifyContent: 'center', height:'400%',width: '100%',
+               }}
+               source={require("./assets/MESCAPE.png")}>
+
+
+
+
+           </ImageBackground>
+            <Image
+                style={{align: 'center', justifyContent:'center',width:'20%', height:'100', resizeModeText: 'stretch'}}
+                source={require("./assets/Vary.png")}>
+
+            </Image>
+
+
+
+
+        </View>
+    );
+}
+
+const Stack = createStackNavigator();
+
+function App() {
+    return (
+
+
+        <NavigationContainer>
+            <Stack.Navigator>
+                <Stack.Screen name="Menu" component={Menu} />
+                <Stack.Screen name="MartianEscape" component={MartianEscape} />
+            </Stack.Navigator>
+        </NavigationContainer>
+
+
+
+
+
+    );
+}
+
+export default App;
