@@ -36,18 +36,6 @@ function MartianEscape({navigation}) {
                     style={styles.vary}/>
 
 
-               <Text style={{color:"white", flexDirection:"row", flex:1, position:"absolute"}}>
-                    0
-
-                    1
-
-                    2
-
-                    3
-
-                    4
-                </Text>
-
 
             </ImageBackground>
 
