@@ -5,10 +5,7 @@ import ScreenSize from '../utils/ScreenSize'
 const styles = StyleSheet.create({
 
     direction_pad: {
-        height:'10%',
         flexDirection:'row',
-        backgroundColor:'gold',
-        justifyContent: 'space-between',
     },
 
     menu:{
@@ -26,13 +23,20 @@ const styles = StyleSheet.create({
     },
 
     world:{
+        borderWidth: 5,
+        borderColor: 'black',
+        color: 'white',
         justifyContent: 'center',
         height: ScreenSize.theHeight,
         width: ScreenSize.theWidth,
 
+    },
 
-
-    }
+    vary: {
+        width:'25%',
+        height:'25%',
+        position:'absolute',
+    },
 
 
 
