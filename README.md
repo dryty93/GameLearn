@@ -11,7 +11,7 @@ on your Mobile Device or via your preffered web browser.
 
 ### 1. Martian Escape
 
-<img src="./assets/MESCAPE.png" alt="Not Found!" width="600"/>
+<img src="./assets/screenshot.PNG" width="600"/>
 
 
 
