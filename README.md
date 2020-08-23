@@ -1,4 +1,6 @@
-# GameLearn
+# GameLearn  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 
 ### ***GameLearn*** is an *ELearning* Game "Console". 
 GameLearn comes pre packed with games all available
