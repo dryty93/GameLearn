@@ -6,10 +6,12 @@ import * as React from 'react';
 function Menu({navigation}) {
     return (
         <View style={styles.menu}>
-            <Text>GameLearn</Text>
-            <Text>Dryden Inc Games</Text>
-            <Text>Menu:</Text>
-            <Button
+            <Text style={{textAlign:'center'}}>GameLearn</Text>
+            <Text style={{textAlign:'center'}}>Dryden Inc Games</Text>
+            <Text style={{textAlign:'center'}}>Menu:</Text>
+
+
+            <Button style={styles.menuButton}
                 color="black"
                 title =  'Martian Escape'
 
