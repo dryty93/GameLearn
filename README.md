@@ -1,4 +1,6 @@
-# GameLearn
+# GameLearn  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 
 ### ***GameLearn*** is an *ELearning* Game "Console". 
 GameLearn comes pre packed with games all available
@@ -11,7 +13,7 @@ on your Mobile Device or via your preffered web browser.
 
 ### 1. Martian Escape
 
-<img src="./assets/MESCAPE.png" alt="Not Found!" width="600"/>
+<img src="./assets/screenshot.PNG" width="600"/>
 
 
 
